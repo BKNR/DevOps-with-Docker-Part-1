@@ -1,0 +1,3 @@
+docker run -it --name ex14 ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+docker exec -it ex14 bash
+apt update && apt install curl -y
